@@ -1,0 +1,7 @@
+{
+  "name": "app_social_auth",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
