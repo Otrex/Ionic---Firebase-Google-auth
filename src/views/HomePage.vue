@@ -16,6 +16,8 @@
       <div id="container">
         <strong>Ready to create an app?</strong>
         <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <button @click="googleSignIn"> Sign Up with Google </button>
+        <h1>{{response}}</h1>
       </div>
     </ion-content>
   </ion-page>
@@ -24,6 +26,7 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import {FirebaseAuthenticationService} from '../utils';
 
 export default defineComponent({
   name: 'HomePage',
@@ -33,6 +36,19 @@ export default defineComponent({
     IonPage,
     IonTitle,
     IonToolbar
+  },
+  data: () => ({
+    firebaseService: null as null | FirebaseAuthenticationService,
+    response: null as any,
+  }),
+  mounted() {
+    this.firebaseService = new FirebaseAuthenticationService();
+  },
+  methods: {
+    async googleSignIn() {
+      this.response = await this.firebaseService?.signInWithGoogle()
+    }
+
   }
 });
 </script>
@@ -64,5 +80,11 @@ export default defineComponent({
 
 #container a {
   text-decoration: none;
+}
+
+#container button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 </style>

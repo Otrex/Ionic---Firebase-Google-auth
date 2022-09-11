@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "869994322369",
+    "project_id": "otrex-socials",
+    "storage_bucket": "otrex-socials.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869994322369:android:da21775c146dc720843740",
+        "android_client_info": {
+          "package_name": "com.otrex.socials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869994322369-uitsfb26er8bprlm4sl9v5gpcvf4sdj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnMuNgUuuEoWQ11m-M8DGy6n2ZE_askQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869994322369-uitsfb26er8bprlm4sl9v5gpcvf4sdj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
