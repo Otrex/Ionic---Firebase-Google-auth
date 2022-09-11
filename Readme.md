@@ -22,7 +22,7 @@
   implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.android.gms:play-services-auth:20.3.0'
   ```
-    under dependencies option as indecated in https://firebase.google.com/docs/android/setup.
+    under dependencies option as indecated in https://firebase.google.com/docs/android/setup and https://firebase.google.com/docs/auth/android/google-signin.
 
 - add google-service.json
   - generate signing key from android studio
